@@ -1,0 +1,71 @@
+#hamster-wheel {
+  background-image: linear-gradient(147deg, #170435 10%, #4a1062 50%, #a51f7f 100%);
+}
+
+.wheel-top {
+  text-align: center;
+  color: transparent;
+  font-family: "Russo One", sans-serif;
+  text-transform: uppercase;
+  font-size: 2.5em;
+  padding-bottom: 10px;
+  background: linear-gradient(#ff2d82 0%, #fddd17 30%, #ff6936, #ff2d82 60%, #ff2d82 100%);
+  background-size: contain;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-stroke: 1px silver;
+  filter: drop-shadow(5px 5px 1px black) drop-shadow(1px 1px 1px #de5170);
+  animation: bg-shift 2s ease-in-out infinite alternate;
+}
+
+.treadmill {
+  overflow: scroll;
+  margin: 0 auto;
+  width: 300px;
+  height: 250px;
+  color: white;
+  cursor: crosshair;
+  box-shadow: 0px 7px 46px 0px rgba(41, 53, 108, 0.45);
+  background: #4b1079;
+  border-radius: 15px;
+  background-image: linear-gradient(147deg, #6e0777 0%, #380c70 74%);
+}
+
+h4 {
+  background-image: linear-gradient(147deg,
+      #fddd17 30%,
+      #ff6936,
+      #ff2d82 60%,
+      #ff2d82 100%);
+  transition: all 0.35s ease-in-out;
+  transform: scale(0.7);
+  box-shadow: 0px 7px 16px 0px rgba(41, 53, 108, 0.25);
+  height: 15px;
+  margin-top: 50px;
+  border-radius: 15px;
+}
+
+#progress {
+  font-family: 'VT323', monospace;
+  text-align: center;
+  font-size: 2.8vw;
+  grid-column: 2;
+  grid-row: 3;
+  border: 3px none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  color: red;
+  background-color: black;
+}
+
+.treadmill::-webkit-scrollbar {
+  display: none;
+}
+
+@media screen and (max-height: 300px) {
+  .treadmill {
+    height: 80px;
+  }
+}
