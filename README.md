@@ -1,4 +1,4 @@
-# Project1
+# Portfolio Site
 Welcome to Giggapedia!
 
 When you first arrive, you will be greated in a true 80's styling of soft, yet piercing colors.
